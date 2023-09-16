@@ -24,7 +24,7 @@ app.get("/", function (request, response) {
   response.send("🙋‍♂️, 🌏 🎊✨🤩");
 });
 
-app.get("",async function (request, response) {
+app.get("/guvi",async function (request, response) {
     const movie= await client
     .db("guvi")
     .collection("guvi")
