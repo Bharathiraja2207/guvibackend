@@ -20,11 +20,11 @@ await client.connect();
 const PORT = (process.env.PORT)
 // const PORT = 4000;
 
-app.get("/", function (request, response) {
+app.get("/guvi", function (request, response) {
   response.send("🙋‍♂️, 🌏 🎊✨🤩");
 });
 
-app.get("/guvi",async function (request, response) {
+app.get("/",async function (request, response) {
     const movie= await client
     .db("guvi")
     .collection("guvi")
